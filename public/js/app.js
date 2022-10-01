@@ -10,7 +10,7 @@ p2.style.display="none"
 const input=document.querySelector('input')
  const name=input.value
 
- const url=`http://localhost:3000/weather?location=${name}`
+ const url=`/weather?location=${name}`
  fetch(url).then((response)=>{
      response.json().then((data)=>{
          console.log(data)
